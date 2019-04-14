@@ -5,11 +5,14 @@
   justify-content: flex-start;
   padding: 18px;
   color: #ffffff;
+  text-align: left;
 
   @media #{$media-min-laptop} {
     padding: 20px 100px;
     align-content: center;
+    text-align: center;
   }
+
   &__column {
     padding-right: 38px;
   }

@@ -3,24 +3,34 @@
   &__main {
     text-shadow: 1px 1px 1px rgba(214, 214, 214, 0.5);
     font-family: Montserrat;
-    font-size: 40px;
+    font-size: 26px;
     font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.2;
-    letter-spacing: normal;
     color: #ffffff;
     text-transform: uppercase;
+
+    margin-bottom: 18px;
+    @media #{$media-min-laptop} {
+      font-size: 40px;
+    }
   }
 
   &__subtitle {
+    font-size: 18px;
     font-family: Montserrat;
-    font-size: 20px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
     letter-spacing: normal;
     color: #ffffff;
+    margin-bottom: 18px;
+
+    span {
+      color: red;
+    }
+
+    @media #{$media-min-laptop} {
+      font-size: 20px;
+    }
   }
 }

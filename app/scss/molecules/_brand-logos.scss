@@ -1,13 +1,29 @@
 .brand-logos {
   display: flex;
-  padding: 25px 100px 55px;
+  padding: 25px 18px 55px;
+  overflow-y: auto;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: nowrap;
+
   justify-content: flex-start;
   text-align: left;
 
+  @media #{$media-min-laptop} {
+    padding: 25px 100px 55px;
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
+
   &__item {
-    min-width: 300px;
+    & + & {
+      margin-left: 50px;
+    }
+    @media #{$media-min-laptop} {
+      & + & {
+        margin-left: 0px;
+      }
+      min-width: 300px;
+    }
   }
 }

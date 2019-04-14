@@ -1,13 +1,17 @@
 .banner {
   width: 100%;
+  height: 40vh;
   background: #000000;
-  height: 90vh;
   object-fit: contain;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   position: relative;
   margin-bottom: 17px;
+
+  &--main {
+    height: 90vh;
+  }
 
   @media #{$media-min-laptop} {
     height: 460px;

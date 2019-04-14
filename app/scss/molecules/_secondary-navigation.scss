@@ -10,6 +10,20 @@
     align-items: center;
   }
 
+  &__item {
+    display: none;
+
+    @media #{$media-min-laptop} {
+      display: flex;
+    }
+
+    &--visible-mobile {
+      @media #{$media-min-laptop} {
+        display: flex;
+      }
+    }
+  }
+
   &__separator {
     height: 36px;
     width: 50px;
