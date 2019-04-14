@@ -1,0 +1,20 @@
+.rating-box {
+  display: block;
+  width: 77px;
+  border-radius: 5px;
+  padding: 8px;
+  background-color: #f1eade;
+  text-align: center;
+  color: #000000;
+
+  &__title {
+    font-size: 10px;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  &__value {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}

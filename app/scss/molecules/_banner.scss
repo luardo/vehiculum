@@ -1,0 +1,76 @@
+.banner {
+  width: 100%;
+  background: #000000;
+  height: 90vh;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  margin-bottom: 17px;
+
+  @media #{$media-min-laptop} {
+    height: 460px;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+
+    div {
+      width: 100%;
+      height: 100%;
+      display: block;
+      -o-object-fit: cover;
+      object-fit: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: "object-fit: cover;";
+    }
+  }
+
+  &__content {
+    width: 800px;
+    padding: 0 18px;
+    z-index: 1;
+
+    @media #{$media-min-laptop} {
+      padding: 0 97px;
+    }
+
+    &::after {
+      content: "";
+      background: rgba(27, 27, 27, 0.6);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
+
+  &__buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+
+    > div {
+      margin-bottom: 20px;
+    }
+
+    @media #{$media-min-laptop} {
+      flex-direction: row;
+      align-items: initial;
+      justify-content: space-between;
+    }
+  }
+}

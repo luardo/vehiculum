@@ -1,0 +1,27 @@
+.secondary-navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__separator {
+    height: 36px;
+    width: 50px;
+    position: relative;
+
+    &::after {
+      height: 100%;
+      width: 1px;
+      content: " ";
+      position: absolute;
+      right: 50%;
+      background-color: #e7e7e7;
+    }
+  }
+}

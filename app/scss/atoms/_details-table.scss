@@ -1,0 +1,21 @@
+.details-table {
+  &--boxed {
+    padding: 28px;
+    border-radius: 2px;
+    border: solid 1px #e8e8e8;
+    background-color: #ffffff;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 5px 0;
+
+    &--featured {
+      padding-top: 15px;
+      font-weight: bold;
+    }
+  }
+}

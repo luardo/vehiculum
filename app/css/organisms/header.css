@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 97px;
+  height: 62px; }
+  .header__logo {
+    flex-basis: 120px; }
+  .header__navigation {
+    flex-grow: 2; }
+  .header__column {
+    align-self: center; }
