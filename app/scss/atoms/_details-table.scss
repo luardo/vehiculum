@@ -1,6 +1,8 @@
 .details-table {
+  font-size: 14px;
+
   &--boxed {
-    padding: 28px;
+    padding: $padding-normal;
     border-radius: 2px;
     border: solid 1px #e8e8e8;
     background-color: #ffffff;

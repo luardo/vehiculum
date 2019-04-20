@@ -1,11 +1,10 @@
 .vehicle-box {
   width: 100%;
   border-radius: 2px;
-  border: solid 1px #efefef;
-  background-color: #ffffff;
   padding: 20px;
   text-align: left;
   margin-bottom: 18px;
+  flex: 1;
 
   @media #{$media-min-laptop} {
     width: 295px;

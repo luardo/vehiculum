@@ -1,6 +1,5 @@
 .banner {
   width: 100%;
-  height: 40vh;
   background: #000000;
   object-fit: contain;
   display: flex;
@@ -8,10 +7,6 @@
   justify-content: flex-start;
   position: relative;
   margin-bottom: 17px;
-
-  &--main {
-    height: 90vh;
-  }
 
   @media #{$media-min-laptop} {
     height: 460px;
@@ -35,17 +30,18 @@
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: cover;
-      font-family: "object-fit: cover;";
     }
   }
 
   &__content {
     width: 800px;
-    padding: 0 18px;
     z-index: 1;
 
-    @media #{$media-min-laptop} {
-      padding: 0 97px;
+    @include responsive-padding();
+
+    @media #{$media-max-laptop} {
+      padding-top: $padding-normal * 2;
+      padding-bottom: $padding-normal * 2;
     }
 
     &::after {
@@ -60,19 +56,28 @@
     }
   }
 
+  &--no-overlay &__content {
+    &::after {
+      display: none;
+    }
+  }
+
   &__buttons-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 32px;
+    align-items: center;
 
     > div {
       margin-bottom: 20px;
     }
 
-    @media #{$media-min-laptop} {
+    @media #{$media-min-phablet} {
       flex-direction: row;
+      max-width: 100%;
+
       align-items: initial;
       justify-content: space-between;
     }

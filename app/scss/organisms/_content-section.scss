@@ -1,0 +1,10 @@
+.content-section {
+  display: block;
+  @include responsive-padding();
+  margin-bottom: 80px;
+
+  &__title {
+    display: block;
+    padding: $padding-normal 0;
+  }
+}

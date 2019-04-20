@@ -1,0 +1,21 @@
+@mixin responsive-padding() {
+  padding-left: $padding-normal;
+  padding-right: $padding-normal;
+
+  @media #{$media-min-laptop} {
+    padding-left: $padding-large;
+    padding-right: $padding-large;
+  }
+
+  @media #{$media-min-desktop} {
+    padding-left: $padding-large;
+    padding-right: $padding-large;
+  }
+}
+
+@mixin link() {
+  font-family: $font-family;
+  text-align: inherit;
+  color: $primary-color;
+  text-decoration: none;
+}

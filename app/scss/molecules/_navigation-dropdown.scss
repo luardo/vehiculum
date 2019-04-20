@@ -1,0 +1,32 @@
+.navigation-dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  padding: $padding-normal;
+  background: $default-background-color;
+  width: 233px;
+  border: solid 1px #e8e8e8;
+  border-top: none;
+  z-index: 2;
+
+  .secondary-navigation .link-item:focus + & {
+    display: block;
+  }
+
+  &__item {
+    & + & {
+      padding-top: $padding-normal;
+    }
+
+    &--separator {
+      padding: $padding-normal / 2 0;
+      margin-bottom: $padding-normal / 2;
+      border-bottom: 1px solid $dark-border-color;
+    }
+  }
+
+  &__link {
+    @include link();
+  }
+}

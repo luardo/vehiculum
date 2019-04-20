@@ -2,15 +2,29 @@
   display: flex;
   flex-direction: column;
 
-  margin-bottom: 30px;
-  padding: 0 18px;
+  @media #{$media-min-phablet} {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
   @media #{$media-min-laptop} {
     flex-direction: row;
-    padding: 0 100px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-y: auto;
   }
 
   &__item {
+    border: solid 1px #efefef;
+    background-color: #ffffff;
+    flex-basis: 1;
+
+    @media #{$media-max-phablet} {
+      flex-basis: 48%;
+      margin-bottom: $padding-normal;
+    }
+
     & + & {
       @media #{$media-min-laptop} {
         margin-left: 20px;

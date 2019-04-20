@@ -1,5 +1,6 @@
 .button {
-  background: #cfb995;
+  background: $secondary-color;
+  border: solid 1px $secondary-color;
   width: 100%;
   font-family: Montserrat;
   font-size: 14px;
@@ -10,8 +11,14 @@
   text-align: center;
   padding: 17px 20px;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: $padding-normal;
   text-decoration: none;
+
+  @media #{$media-min-phablet} {
+    & + & {
+      margin-left: $padding-normal;
+    }
+  }
 
   @media #{$media-min-laptop} {
     max-width: 295px;

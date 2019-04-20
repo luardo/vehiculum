@@ -1,0 +1,8 @@
+.offer-box {
+  display: block;
+  width: 100%;
+
+  @media #{$media-min-phablet} {
+    max-width: 308px;
+  }
+}

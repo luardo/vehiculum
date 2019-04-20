@@ -1,6 +1,5 @@
 .brand-logos {
   display: flex;
-  padding: 25px 18px 55px;
   overflow-y: auto;
   flex-direction: row;
   align-items: center;
@@ -9,13 +8,9 @@
   justify-content: flex-start;
   text-align: left;
 
-  @media #{$media-min-laptop} {
-    padding: 25px 100px 55px;
-    overflow: hidden;
-    flex-wrap: wrap;
-  }
-
   &__item {
+    min-width: 200px;
+
     & + & {
       margin-left: 50px;
     }

@@ -3,12 +3,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  padding: 0 18px;
   height: 62px;
-
-  @media #{$media-min-laptop} {
-    padding: 0 100px;
-  }
+  @include responsive-padding();
 
   &__logo {
     flex-basis: 120px;
