@@ -1,0 +1,8 @@
+.featured-list {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    padding-bottom: $padding-normal;
+  }
+}

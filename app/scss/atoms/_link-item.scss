@@ -1,13 +1,13 @@
 .link-item {
   display: none;
-  font-family: Montserrat;
+  color: $primary-color;
   font-size: 18px;
   font-weight: 600;
   text-align: center;
-  color: #000000;
   text-decoration: none;
-  padding: 0 25px;
+  padding: 0 $padding-normal;
   position: relative;
+  cursor: pointer;
 
   @media #{$media-min-laptop} {
     display: block;

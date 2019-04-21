@@ -1,0 +1,9 @@
+.dropdown-link-item-container {
+  &__checkbox {
+    display: none;
+  }
+
+  &__label {
+    @extend .link-item;
+  }
+}

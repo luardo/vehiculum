@@ -10,7 +10,7 @@
   border-top: none;
   z-index: 2;
 
-  .secondary-navigation .link-item:focus + & {
+  .secondary-navigation .dropdown-link-item-container__checkbox:checked + & {
     display: block;
   }
 

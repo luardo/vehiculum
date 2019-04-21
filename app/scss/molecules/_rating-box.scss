@@ -3,9 +3,13 @@
   width: 77px;
   border-radius: 5px;
   padding: 8px;
-  background-color: #f1eade;
+  background-color: $sorrell-brown;
   text-align: center;
-  color: #000000;
+  color: $primary-color;
+
+  &--squared {
+    border-radius: 0;
+  }
 
   &__title {
     font-size: 10px;

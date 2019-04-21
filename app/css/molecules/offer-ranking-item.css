@@ -1,0 +1,19 @@
+.offer-ranking-item {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: baseline; }
+  .offer-ranking-item__title {
+    font-size: 14px;
+    align-self: baseline; }
+  .offer-ranking-item__line {
+    flex-grow: 2;
+    position: relative; }
+    .offer-ranking-item__line::after {
+      position: absolute;
+      top: 0;
+      content: " ";
+      height: 2px;
+      left: 0;
+      width: 100%;
+      background: red; }

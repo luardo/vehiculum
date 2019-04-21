@@ -1,7 +1,11 @@
 .content-section {
   display: block;
-  @include responsive-padding();
-  margin-bottom: 80px;
+  @include responsive-width();
+  margin: 0 auto 80px;
+
+  &--medium {
+    max-width: 940px;
+  }
 
   &__title {
     display: block;

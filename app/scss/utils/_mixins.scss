@@ -13,6 +13,22 @@
   }
 }
 
+@mixin responsive-width() {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: $padding-normal;
+  padding-right: $padding-normal;
+
+  @media #{$media-min-laptop} {
+    max-width: $inner-layout-max-width;
+  }
+
+  @media #{$media-min-desktop} {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 @mixin link() {
   font-family: $font-family;
   text-align: inherit;

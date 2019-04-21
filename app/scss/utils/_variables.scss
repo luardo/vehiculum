@@ -3,13 +3,23 @@ $font-family: Montserrat;
 $padding-normal: 18px;
 $padding-large: 100px;
 
-$primary-color: #000000;
-$secondary-color: #cfb995;
+$inner-layout-max-width: 1220px;
+
+$sorrell-brown: rgb(207, 185, 149);
+$black: #000000;
+$electric-violet: #a142f4;
+$apple: #6fdd61;
+$fern: #65b77e;
+
+$primary-color: $black;
+$secondary-color: $sorrell-brown;
 $third-color: #e7e7e7;
 
 $default-background-color: #ffffff;
 $default-border-color: $third-color;
 $dark-border-color: #4f4f4f;
+
+$header-height: 62px;
 
 $max-layout-width: 1276px;
 $width-phone-start: 320px;

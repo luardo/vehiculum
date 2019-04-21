@@ -27,7 +27,7 @@
 
     & + & {
       @media #{$media-min-laptop} {
-        margin-left: 20px;
+        margin-left: $padding-normal;
       }
     }
   }

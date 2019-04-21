@@ -1,6 +1,8 @@
+$button-colors: ("sorrel-brown", $sorrell-brown), ("red", red), ("green", $fern);
+
 .button {
-  background: $secondary-color;
-  border: solid 1px $secondary-color;
+  background: none;
+  border: solid 1px #ffffff;
   width: 100%;
   font-family: Montserrat;
   font-size: 14px;
@@ -11,8 +13,29 @@
   text-align: center;
   padding: 17px 20px;
   display: block;
-  margin-bottom: $padding-normal;
   text-decoration: none;
+  transition: background-color 200ms linear;
+
+  @each $color in $button-colors {
+    $color-name: nth($color, 1);
+    $value: nth($color, 2);
+
+    &--#{$color-name} {
+      background-color: $value;
+      border: solid 1px $value;
+
+      &:hover {
+        background-color: darken($value, 10%);
+        border-color: darken($value, 10%);
+        cursor: pointer;
+      }
+    }
+  }
+
+  &--slim {
+    padding: 10px 10px;
+    font-size: 12px;
+  }
 
   @media #{$media-min-phablet} {
     & + & {
@@ -26,14 +49,5 @@
 
   &--fullwidth {
     max-width: 100%;
-  }
-
-  &--ghost {
-    background: none;
-    border: solid 1px #ffffff;
-  }
-
-  &--red {
-    background-color: #fa454b;
   }
 }
