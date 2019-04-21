@@ -1,7 +1,7 @@
 .content-section {
   display: block;
   @include responsive-width();
-  margin: 0 auto 80px;
+  margin: 80px auto;
 
   &--medium {
     max-width: 940px;

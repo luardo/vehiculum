@@ -396,14 +396,30 @@ table {
   display: flex;
   flex-direction: row;
   align-content: center;
-  align-items: flex-end; }
+  flex-wrap: wrap;
+  align-items: baseline; }
+  @media only screen and (min-width: 640px) {
+    .offer-ranking-item {
+      flex-wrap: nowrap;
+      align-items: flex-end; } }
   .offer-ranking-item__title {
     font-size: 14px;
-    padding-right: 18px; }
+    padding-right: 18px;
+    text-align: left;
+    flex-grow: 2; }
+    @media only screen and (min-width: 640px) {
+      .offer-ranking-item__title {
+        flex-grow: initial;
+        flex-basis: auto; } }
   .offer-ranking-item__line {
-    flex-grow: 2;
-    position: relative;
-    padding-right: 18px; }
+    display: none; }
+    @media only screen and (min-width: 640px) {
+      .offer-ranking-item__line {
+        flex-grow: 1;
+        display: block;
+        position: relative;
+        padding-right: 18px;
+        align-self: flex-end; } }
     .offer-ranking-item__line::after {
       position: absolute;
       bottom: 4px;
@@ -412,10 +428,16 @@ table {
       left: 0;
       width: 100%;
       background: #a142f4; }
-  .offer-ranking-item__rating {
-    padding-left: 18px; }
+  @media only screen and (min-width: 640px) {
+    .offer-ranking-item__rating {
+      padding-left: 18px; } }
   .offer-ranking-item__button {
-    padding-left: 18px; }
+    margin-top: 18px;
+    width: 100%; }
+    @media only screen and (min-width: 640px) {
+      .offer-ranking-item__button {
+        padding-left: 18px;
+        width: auto; } }
 
 .promo-section {
   background-color: #000000;
@@ -572,7 +594,7 @@ table {
   margin: 0 auto;
   padding-left: 18px;
   padding-right: 18px;
-  margin: 0 auto 80px; }
+  margin: 80px auto; }
   @media only screen and (min-width: 1024px) {
     .content-section {
       max-width: 1220px; } }
